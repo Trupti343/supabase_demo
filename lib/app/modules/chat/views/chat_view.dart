@@ -169,7 +169,7 @@ class ChatView extends GetView<ChatController> {
                 )),
           ),
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
             child: Row(
               children: [
                 Expanded(

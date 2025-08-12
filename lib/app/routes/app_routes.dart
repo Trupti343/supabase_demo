@@ -11,6 +11,7 @@ abstract class Routes {
   static const LOGIN = _Paths.LOGIN;
   static const USERS = _Paths.USERS;
   static const IN_APP_PURCHASE = _Paths.IN_APP_PURCHASE;
+  static const DEEP_LINK = _Paths.DEEP_LINK;
 }
 
 abstract class _Paths {
@@ -23,4 +24,5 @@ abstract class _Paths {
   static const LOGIN = '/login';
   static const USERS = '/users';
   static const IN_APP_PURCHASE = '/in-app-purchase';
+  static const DEEP_LINK = '/deep-link';
 }

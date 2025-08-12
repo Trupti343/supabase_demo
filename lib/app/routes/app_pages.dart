@@ -4,6 +4,8 @@ import '../modules/chat/bindings/chat_binding.dart';
 import '../modules/chat/views/chat_view.dart';
 import '../modules/crud/bindings/crud_binding.dart';
 import '../modules/crud/views/crud_view.dart';
+import '../modules/deep_link/bindings/deep_link_binding.dart';
+import '../modules/deep_link/views/deep_link_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/in_app_purchase/bindings/in_app_purchase_binding.dart';
@@ -22,7 +24,7 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.LOGIN;
+  static const INITIAL = Routes.DEEP_LINK;
 
   static final routes = [
     GetPage(
@@ -47,7 +49,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.CHAT,
-      page: () =>  ChatView(),
+      page: () => ChatView(),
       binding: ChatBinding(),
     ),
     GetPage(
@@ -55,16 +57,20 @@ class AppPages {
       page: () => LoginView(),
       binding: LoginBinding(),
     ),
- 
     GetPage(
       name: _Paths.USERS,
-      page: () =>  UsersView(),
+      page: () => UsersView(),
       binding: UsersBinding(),
     ),
     GetPage(
       name: _Paths.IN_APP_PURCHASE,
       page: () => InAppPurchaseView(),
       binding: InAppPurchaseBinding(),
+    ),
+    GetPage(
+      name: _Paths.DEEP_LINK,
+      page: () => const DeepLinkView(),
+      binding: DeepLinkBinding(),
     ),
   ];
 }
